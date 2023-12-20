@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/statusBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".home.GuideActivity"></activity>
+        <activity android:name=".home.WelcomeActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".luckfrag.LuckAnalysisActivity" />
+        <activity android:name=".parnterfrag.ParnterAnalysisActivity" />
+        <activity android:name=".starfrag.StarAnalysisActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" /><!--网络接口-->
+
+</manifest>
